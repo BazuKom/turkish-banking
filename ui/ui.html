@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Banka</title>
+    <link rel="stylesheet" href="ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rampart+One&family=Rowdies:wght@300;400;700&family=Stardos+Stencil:wght@400;700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rampart+One&family=Rowdies:wght@300;400;700&family=Stardos+Stencil:wght@400;700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banka-cerceve" style="display: none;">
+        <div class="banka-profil">
+            <img class="profil-resmi" src="https://openclipart.org/image/2000px/247319" alt="Profil Resmi">
+            <div class="merhaba">Merhaba Username</div>
+        </div>
+        <div class="banka-menu-islem">
+            <div class="banka-kapat"></div>
+            <div class="banka-boyut"></div>
+            <div class="banka-simge"></div>
+        </div>
+        <div class="banka-footer">
+          <div class="banka-logo">TR</div>
+        <div class="banka-anasayfa active" title="Anasayfa">
+           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+         </svg>
+        </div>
+          <div class="banka-faturalar" title="Faturalar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+              <path d="M19 2H8a2 2 0 0 0-2 2v2H5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 8h12v11H6V8zm2-4h11v2H8V4z"/>
+            </svg>
+          </div>
+          <div class="banka-yatırımlar" title="Yatırımlar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+              <path d="M3 17h2v-4H3v4zm4 0h2V7H7v10zm4 0h2v-7h-2v7zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z"/>
+            </svg>
+          </div>
+            <div class="banka-kripto" title="Kriptolar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.03 2 11s4.48 9 10 9 10-4.03 10-9-4.48-9-10-9zm0 16c-3.87 0-7-2.69-7-6s3.13-6 7-6 7 2.69 7 6-3.13 6-7 6zm.5-10h-1v2H10v2h1.5v4h2v-4H15v-2h-2.5V8z"/>
+              </svg>
+            </div>
+          <div class="banka-gecmis" title="Geçmiş">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+              <path d="M13 3a9 9 0 0 0-9 9H1l4 4 4-4H6a7 7 0 1 1 7 7 1 1 0 0 0 0 2 9 9 0 0 0 0-18zm-1 4v6l5.2 3.1.8-1.4-4.5-2.7V7h-1.5z"/>
+            </svg>
+          </div>
+          <div class="banka-ayarlar" title="Ayarlar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+              <path d="M19.43 12.98a7.969 7.969 0 0 0 0-1.96l2.11-1.65a.5.5 0 0 0 .11-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.958 7.958 0 0 0-1.69-.98L14 2.5a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.5l-.38 2.53a7.958 7.958 0 0 0-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .11.64l2.11 1.65c-.05.32-.08.65-.08.98s.03.66.08.98l-2.11 1.65a.5.5 0 0 0-.11.64l2 3.46a.5.5 0 0 0 .61.22l2.49-1c.52.39 1.09.72 1.69.98L9 21.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5l.38-2.53a7.958 7.958 0 0 0 1.69-.98l2.49 1a.5.5 0 0 0 .61-.22l2-3.46a.5.5 0 0 0-.11-.64l-2.13-1.69zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z"/>
+            </svg>
+          </div>
+          <div class="banka-cıkıs" title="Çıkış Yap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="red">
+              <path d="M14 7v3h7v4h-7v3l-5-5 5-5zm-9-4h6v2H5v14h6v2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="banka-bildirim-merkezi">
+            <div class="bildirim-icerik"></div>
+        </div>
+        <div class="banka-ana-sayfa" style="display: block;">
+            <div class="banka-para-grafiği">
+              <svg id="paraSvg" viewBox="0 0 100 40" preserveAspectRatio="none"></svg>
+              <div class="etiket-y">
+                <span>250K</span>
+                <span>100K</span>
+                <span>75K</span>
+                <span>50K</span>
+                <span>25K</span>
+                <span>10K</span>
+              </div>
+              <div class="etiket-x">
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+                <span>Sun</span>
+              </div>
+            </div>
+            <div class="banka-hizli-islem">
+              <div class="islem send-money">
+                <h3>Para Gönder</h3>
+                <div class="inputlar">
+                  <input type="number" placeholder="Miktar" id="send-amount" />
+                  <input type="text" placeholder="Alıcı" id="send-receiver" />
+                </div>
+                <div class="buton" id="buton-para-gonder" data-id="send">Gönder</div>
+              </div>
+            
+              <div class="islem withdraw">
+                <h3>Çek</h3>
+                <input type="number" placeholder="Miktar" class="gold" id="withdraw-amount" />
+                <div class="buton2" id="buton-para-cek" data-id="withdraw">Çek</div>
+              </div>
+            
+              <div class="islem deposit">
+                <h3>Yatır</h3>
+                <input type="number" placeholder="Miktar" class="green" id="deposit-amount" />
+                <div class="buton2" id="buton-para-yatir" data-id="deposit">Yatır</div>
+              </div>
+            </div>
+            <div class="banka-islem-gecmisi">
+              <div class="banka-islem-header">İşlem Geçmişi</div>
+            </div>
+            <div class="banka-hesap-bilgileri">
+              <div class="banka-hesap-bakiye">
+                <div class="mevcut-bakiye">Bakiyeniz</div>
+                <div class="bakiye-konteyner">
+                <div class="bakiye-bilgi">15000$</div>
+                </div>
+              </div>
+              <div class="banka-hesap-karti">
+                <div class="banka-kart-chip">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30">
+                    <rect x="1" y="1" width="38" height="28" rx="4" ry="4" fill="#b0b0b0" stroke="#333" stroke-width="0.5"/>
+                    <line x1="10" y1="1" x2="10" y2="29" stroke="#333" stroke-width="0.5"/>
+                    <line x1="20" y1="1" x2="20" y2="29" stroke="#333" stroke-width="0.5"/>
+                    <line x1="30" y1="1" x2="30" y2="29" stroke="#333" stroke-width="0.5"/>
+                    <line x1="1" y1="10" x2="39" y2="10" stroke="#333" stroke-width="0.5"/>
+                    <line x1="1" y1="20" x2="39" y2="20" stroke="#333" stroke-width="0.5"/>
+                  </svg>
+                </div>
+                <div class="banka-kart-sube">trbank</div>
+                <div class="banka-kart-numara">5505 5055 5050 5050</div>
+                <div class="banka-kart-tarih">05/29</div>
+                <div class="banka-kart-isim">Username</div>
+                <div class="banka-kart-model">PLUSCARD+</div>
+              </div>
+            </div>
+        </div>
+        <div class="banka-faturalar-sayfa" style="display: none;">
+          <div class="banka-faturalar-listesi">
+            <div class="banka-fatura-item">
+              <div class="banka-fatura-baslik">L.S.P.D Trafik Cezası</div>
+              <div class="banka-fatura-aciklama">150 KM/H olan hız sınırı 200 KM/H olarak aşılmıştır.</div>
+              <div class="banka-fatura-miktar">5000$</div>
+              <div class="banka-fatura-ode">Öde</div>
+            </div>
+          </div>
+        </div>
+        <div class="banka-yatirimlar-sayfa" style="display: none;">
+          <div class="banka-yatirim-listesi">
+            <div class="banka-yatirim-item">
+              <div class="banka-yatirim-header">MazeBank Doğayı Koru</div>
+              <div class="banka-yatirim-aciklama">Aldığınız bu hisse ile hem paranıza değer katın hemde doğaya destek olun!</div>
+              <div class="banka-yatirim-fiyat">15000$</div>
+              <div class="banka-satin-al">Satın Al</div>
+            </div>
+          </div>
+        </div>
+        <div class="banka-kripto-sayfa" style="display: none;">
+          <div class="banka-kripto-listesi">
+            <div class="banka-kripto-item">
+              <div class="banka-kripto-header">Bitcoin</div>
+              <div class="banka-kripto-fiyat">15000$</div>
+              <div class="banka-kripto-mevcut">Mevcut: 0 BTC</div>
+              <div class="banka-kripto-butons">
+                <div class="banka-kripto-al">Satın Al</div>
+                <div class="banka-kripto-sat">Sat</div>
+              </div>
+            </div>
+          </div>
+          <div class="kripto-satis-modal" style="display: none;">
+            <div class="kripto-satis-icerik">
+              <div class="modal-close">×</div>
+              <h3 id="modal-baslik">İşlem</h3>
+              <label for="satis-adet" id="modal-label">Kaç adet?</label>
+              <input type="number" id="satis-adet" min="0" step="0.01" placeholder="Adet girin" />
+              <div class="satis-kazanc" id="modal-kazanc">Toplam: 0$</div>
+              <button class="satis-onayla" id="modal-onay">İşlemi Onayla</button>
+            </div>
+          </div>
+        </div>
+        <div class="banka-gecmis-sayfa" style="display: none;">
+            <div class="banka-islem-gecmisi2">
+                <div class="banka-islem-header2">İşlem Geçmişi</div>
+            </div>
+            <div class="toplam-gelir-konteyner">
+              <div class="toplam-gelir-header">Toplam Gelir</div>
+              <div class="toplam-gelir-miktar">15000 $</div>
+            </div>
+            <div class="toplam-gider-konteyner">
+              <div class="toplam-gider-header">Toplam Gider</div>
+              <div class="toplam-gider-miktar">15000 $</div>
+            </div>
+        </div>
+        <div class="banka-ayarlar-sayfa" style="display: none;">
+          <div class="banka-ayarlar-konteyner">
+            <div class="banka-ayarlar-header">Ayarlar</div>
+             <div class="ayarlar-kutu-grid-yeni">
+                      
+            <div class="ayar-kutu-ozel" id="kutu-tema-degistirici">
+              <div class="kutu-baslik-ozel">Tema Seçimi</div>
+              <div class="tema-secim" id="tema-acik">Açık Tema</div>
+              <div class="tema-secim" id="tema-koyu">Koyu Tema</div>
+            </div>
+          
+            <div class="ayar-kutu-ozel" id="kutu-renk-degistirici">
+              <div class="kutu-baslik-ozel">Arkaplan Rengi</div>
+              <div class="renk-secim" style="background-color: #1e90ff;" data-renk="#1e90ff"></div>
+              <div class="renk-secim" style="background-color: #126936;" data-renk="#126936"></div>
+              <div class="renk-secim" style="background-color: #703a0b;" data-renk="#703a0b"></div>
+              <div class="renk-secim" style="background-color: #3f0855;" data-renk="#3f0855"></div>
+            </div>
+          
+            <div class="ayar-kutu-ozel" id="kutu-tema-sifirla">
+              <div class="kutu-baslik-ozel">Tema ve Renk Sıfırla</div>
+              <div class="tema-secim" id="tema-sifirla">Varsayılana Döndür</div>
+            </div>
+
+            <div class="ayar-kutu-ozel" id="kutu-bilgilendirme">
+              <div class="kutu-baslik-ozel">Hakkında</div>
+              <p>Bu alan üzerinden görüntüde değişiklik yapabilirsin.<br></p>
+            </div>
+          
+          </div>
+          </div>
+        </div>
+    </div>
+    <script src="ui.js"></script>
+</body>
+</html>

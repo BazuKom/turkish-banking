@@ -1,0 +1,1022 @@
+#banka-cerceve {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 150vh;
+    height: 80vh;
+
+    background:  linear-gradient(#16222b, #162531, #16222b);
+    border-radius: 6vh;
+    box-shadow: 0 0 0 0.8vh #242424, 0 0 0 1vh #636363;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.banka-profil img {
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    top: 3vh;
+    left: 4vh;
+}
+
+.banka-profil {
+    position: relative;
+    left: 7vh;
+}
+
+.merhaba {
+    position: relative;
+    bottom: 1.5vh;
+    left: 11vh;
+    font-size: 2vh;
+}
+
+.kullanici-adi {
+    position: relative;
+    bottom: 4.35vh;
+    left: 21vh;
+    font-size: 2vh;
+}
+
+.banka-menu-islem {
+    position: relative;
+    left: 128vh;
+    width: 15vh;
+    bottom: 6vh;
+    height: 10vh;
+}
+
+.banka-kapat {
+    position: relative;
+    left: 13vh;
+    top: 1.5vh;
+    background:  linear-gradient(#ff7300, #ff0000);
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banka-boyut {
+    position: relative;
+    left: 10vh;
+    bottom: 0.55vh;
+    background:  linear-gradient(#ffc400, #ffee00);
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+}
+
+.banka-simge {
+    position: relative;
+    left: 7vh;
+    bottom: 2.55vh;
+    background: linear-gradient(#00b409, #2bff00);
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+}
+
+.banka-footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 8vh;
+  background: rgba(0, 21, 53, 0.295);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: 600;
+  user-select: none;
+  z-index: 9999;
+}
+
+.banka-footer > div {
+  position: relative;
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  border-radius: 1.5vh;
+  transition: background-color 0.3s ease;
+  width: 5.5vh;
+  height: 5.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(63, 63, 63, 0.575);
+}
+
+.banka-footer > div:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+}
+
+.banka-footer > div.active {
+  background-color: rgba(182, 182, 182, 0.15);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banka-footer > div.active svg {
+  fill: #ffffff;
+}
+
+.banka-footer svg {
+  fill: #4365d6;
+  transition: fill 0.3s ease;
+  width: 3.5vh;
+  height: 3.5vh;
+  border-radius: 1vh;
+}
+
+.banka-footer div:hover svg {
+  fill: #00c3ff;
+}
+
+.banka-anasayfa.active svg {
+  fill: #ffffff;
+}
+
+.banka-cıkıs svg {
+  fill: rgb(211, 211, 211);
+}
+
+.banka-logo {
+  font-family: "Monoton", sans-serif;
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background-color: transparent !important;
+}
+
+.banka-para-grafiği {
+  position: relative;
+  width: 72vh;
+  height: 40vh;
+  bottom: 7vh;
+  left: 13vh;
+  background: linear-gradient(to right, #0f1115e8, #131821e7);
+  border-radius: 1vh;
+  padding: 2vh;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 0.2vh #47474759, 0 0 0 0.1vh #9696965d;
+}
+
+.banka-para-grafiği svg {
+  position: relative;
+  bottom: 2vh;
+  left: 3vh;
+  width: 97% !important;
+  height: 100% !important;
+}
+
+.etiket-x {
+  position: absolute;
+  bottom: 0.5vh;
+  left: 5vh;
+  right: 2vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3vh;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.etiket-y {
+  position: absolute;
+  top: 2vh;
+  bottom: 4vh;
+  left: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.3vh;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.banka-hizli-islem {
+  position: relative;
+  bottom: 6vh;
+  right: 26vh;
+  display: flex;
+  gap: 2.8vh;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 2vh;
+  font-family: 'Poppins', sans-serif;
+  height: auto;
+  width: auto;
+  padding: 2vh;
+}
+
+.islem {
+  border-radius: 4vh;
+  text-align: center;
+  width: 22vh;
+  height: 22vh;
+  box-shadow: 0 0 0 0.2vh #47474759, 0 0 0 0.1vh #9696965d;
+}
+
+.islem h3 {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  font-size: 2vh;
+  color: #ffffff;
+}
+
+.inputlar {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.inputlar input,
+.withdraw input,
+.deposit input {
+  width: 16vh;
+  height: 3.2vh;
+  border-radius: 2vh;
+  border: none;
+  outline: none;
+  font-size: 1.5vh;
+  text-align: center;
+  background: rgba(53, 70, 75, 0.37);
+  transition: 0.2s ease;
+  color: white;
+}
+
+.inputlar input:focus,
+.withdraw input:focus,
+.deposit input:focus {
+  box-shadow: 0 0 0 0.4vh #007aff5e;
+  background: rgba(66, 94, 102, 0.37);
+}
+
+.banka-hizli-islem input::placeholder {
+  color: white;
+}
+
+.buton {
+  background:  linear-gradient(#243c4e, #203544, #243c4e);
+  color: white;
+  width: 12vh;
+  height: 3.5vh;
+  line-height: 3.5vh;
+  margin: 1.5vh auto 0;
+  border-radius: 2vh;
+  font-weight: bold;
+  font-size: 1.8vh;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.buton2 {
+  position: relative;
+  top: 1.9vh;
+  background:  linear-gradient(#243c4e, #203544, #243c4e);
+  color: white;
+  width: 12vh;
+  height: 3.5vh;
+  line-height: 3.5vh;
+  margin: 1.5vh auto 0;
+  border-radius: 2vh;
+  font-weight: bold;
+  font-size: 1.8vh;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+
+.buton:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #06173b, #103f5f);
+}
+
+.buton2:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #06173b, #103f5f);
+}
+
+.send-money {
+    background:  linear-gradient(#16222b, #162531, #16222b);
+}
+
+.withdraw {
+    background:  linear-gradient(#16222b, #162531, #16222b);
+}
+
+.deposit {
+    background:  linear-gradient(#16222b, #162531, #16222b);
+}
+
+.withdraw input.gold {
+  margin-top: 2.5vh;
+  width: 16vh;
+  height: 3.2vh;
+  border-radius: 2vh;
+  background: rgba(53, 70, 75, 0.37);
+}
+
+.deposit input.green {
+  margin-top: 2.5vh;
+  width: 16vh;
+  height: 3.2vh;
+  border-radius: 2vh;
+  background: rgba(53, 70, 75, 0.37);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.banka-islem-gecmisi {
+  position: relative;
+  bottom: 50vh;
+  width: 55vh;
+  height: 42vh;
+  max-height: 42vh;
+  background:  linear-gradient(#16222b, #162531, #16222b);
+  left: 90vh;
+  border-radius: 3vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  box-shadow: 0 0 0 0.2vh #47474759, 0 0 0 0.1vh #9696965d;
+}
+
+.banka-islem-gecmisi::-webkit-scrollbar {
+  display: none;
+}
+
+.banka-islem-item {
+  position: relative;
+  left: 2.5vh;
+  margin-top: 1.5vh;
+  width: 50vh;
+  height: 5.5vh;
+  border-radius: 2vh;
+  top: 2vh;
+  background:  linear-gradient(#1f2c368f, #1f2c368f, #1f2c368f);
+}
+
+.banka-islem-baslik {
+  position: relative;
+  top: 1.5vh;
+  left: 2.5vh;
+}
+
+.banka-islem-tutar {
+  position: relative;
+  left: 40vh;
+  bottom: 1vh;
+}
+
+.banka-islem-header {
+  position: relative;
+  left: 20vh;
+  font-size: 2vh;
+  top: 2vh;
+}
+
+.banka-hesap-bilgileri {
+  position: relative;
+  left: 90vh;
+  bottom: 117vh;
+  width: 55vh;
+  height: 22.1vh;
+  border-radius: 2vh;
+  background:  linear-gradient(#16222b, #162531, #16222b);
+  box-shadow: 0 0 0 0.2vh #47474759, 0 0 0 0.1vh #9696965d;
+}
+
+.banka-hesap-karti {
+  position: relative;
+  left: 26vh;
+  bottom: 14.7vh;
+  width: 27vh;
+  height: 16vh;
+  background:  linear-gradient(#01759257, #2c5d8348, #01759257);
+  border-radius: 1.4vh;
+}
+
+.banka-kart-sube {
+  position: relative;
+  left: 1vh;
+  top: 0.5vh;
+  font-size: 2vh;
+}
+
+.banka-kart-numara {
+  position: relative;
+  left: 4.5vh;
+  top: 5vh;
+}
+
+.banka-kart-isim {
+  position: relative;
+  left: 1vh;
+  top: 5.2vh;
+  font-size: 1.4vh;
+}
+
+.banka-kart-chip {
+  position: absolute;
+  top: 3.5vh;
+  left: 1.5vh;
+  width: 5vh;
+  height: auto;
+}
+
+.banka-kart-tarih {
+  position: relative;
+  top: 5vh;
+  left: 12.5vh;
+  font-size: 1.2vh;
+}
+
+.banka-kart-model {
+  position: relative;
+  left: 18vh;
+  bottom: 9vh;
+}
+
+.banka-hesap-bakiye {
+  position: relative;
+  left: 2vh;
+  top: 2vh;
+  border-radius: 2vh;
+  height: 18vh;
+  width: 18vh;
+  background:  linear-gradient(rgba(53, 70, 75, 0.123), rgba(53, 70, 75, 0.103), rgba(53, 70, 75, 0.144));
+  box-shadow: 0 0 0 0.2vh #03567c2f, 0 0 0 0.1vh #9696964f;
+}
+
+.mevcut-bakiye {
+  position: relative;
+  top: 1.7vh;
+  left: 4vh;
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+.bakiye-bilgi {
+  position: relative;
+  top: 3.41vh;
+  font-size: 1.8vh;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.bakiye-konteyner {
+  position: relative;
+  top: 2vh;
+  left: 1.5vh;
+  width: 14.6vh;
+  height: 10.6vh;
+  border-radius: 2vh;
+  background:  linear-gradient(rgba(15, 158, 201, 0.151), rgba(32, 114, 139, 0.151));
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.bakiye-konteyner::-webkit-scrollbar {
+  display: none;
+}
+
+.banka-faturalar-listesi {
+  position: relative;
+  width: 135vh;
+  height: 60vh;
+  border-radius: 4vh;
+  left: 9vh;
+  bottom: 7vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh;
+  padding: 3vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.banka-faturalar-listesi::-webkit-scrollbar {
+  display: none;
+}
+
+.banka-fatura-item {
+  background-color: #f5f5f544;
+  border-radius: 2vh;
+  padding: 2vh;
+  box-shadow: 0 0.4vh 1vh rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18vh;
+  transition: transform 0.2s ease;
+}
+
+.banka-fatura-baslik {
+  font-weight: bold;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  color: #ffffff;
+}
+
+.banka-fatura-aciklama {
+  font-size: 1.6vh;
+  color: #e4e4e4;
+  flex-grow: 1;
+  margin-bottom: 1.2vh;
+}
+
+.banka-fatura-miktar {
+  font-weight: bold;
+  color: #d9534f;
+  font-size: 1.8vh;
+  margin-bottom: 1vh;
+}
+
+.banka-fatura-ode {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 0.8vh;
+  border-radius: 1vh;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 1.6vh;
+}
+
+.banka-fatura-ode:hover {
+  background-color: #2c332d;
+}
+
+.banka-yatirim-listesi {
+  position: relative;
+  width: 135vh;
+  height: 60vh;
+  border-radius: 4vh;
+  left: 9vh;
+  bottom: 7vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh;
+  padding: 3vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.banka-yatirim-listesi::-webkit-scrollbar {
+  display: none;
+}
+
+.banka-yatirim-item {
+  height: 35vh;
+  border: 1px solid #1f235ead;
+  padding: 2vh;
+  border-radius: 1vh;
+  background-color: #2c86af62;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banka-yatirim-header {
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.banka-yatirim-aciklama {
+  font-size: 2vh;
+  flex-grow: 1;
+  margin-bottom: 1vh;
+  color: rgb(235, 235, 235);
+}
+
+.banka-yatirim-fiyat {
+  font-size: 2.2vh;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 1vh;
+}
+
+.banka-satin-al {
+  padding: 1.2vh;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 0.8vh;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+.banka-kripto-sayfa {
+  position: relative;
+  width: 135vh;
+  height: 60vh;
+  border-radius: 4vh;
+  left: 9vh;
+  bottom: 7vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh;
+  padding: 3vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.banka-kripto-sayfa::-webkit-scrollbar {
+  display: none;
+}
+
+.banka-kripto-listesi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh;
+}
+
+.banka-kripto-item {
+  height: 30vh;
+  width: 30vh;
+  background-color: #1e1e2f;
+  border: 1px solid #444;
+  border-radius: 1vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.banka-kripto-item:hover {
+  transform: translateY(-0.5vh);
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.4);
+}
+
+.banka-kripto-header {
+  font-size: 2.4vh;
+  font-weight: bold;
+  margin-top: 2vh;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+.banka-kripto-fiyat {
+  font-size: 2vh;
+  color: #0f0;
+  margin: 1vh 0;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* Mevcut Varlık Bilgisi */
+.banka-kripto-mevcut {
+  font-size: 1.6vh;
+  color: #ccc;
+  margin: 1vh 0;
+  text-align: center;
+}
+
+/* Butonlar Konteyner */
+.banka-kripto-butons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vh;
+  width: 90%;
+  margin: 0 auto 2vh auto;
+}
+
+/* Satın Al Butonu */
+.banka-kripto-al {
+  flex: 1;
+  background-color: #007bff;
+  color: white;
+  padding: 1.2vh 0;
+  border-radius: 0.8vh;
+  cursor: pointer;
+  font-size: 1.8vh;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.banka-kripto-al:hover {
+  background-color: #0056b3;
+}
+
+.banka-kripto-sat {
+  flex: 1;
+  background-color: #dc3545;
+  color: white;
+  padding: 1.2vh 0;
+  border-radius: 0.8vh;
+  cursor: pointer;
+  font-size: 1.8vh;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.banka-kripto-sat:hover {
+  background-color: #a71d2a;
+}
+
+.kripto-satis-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.kripto-satis-icerik {
+  position: relative;
+  background-color: #1e1e2f;
+  padding: 3vh;
+  border-radius: 1vh;
+  color: #fff;
+  width: 40vh;
+  box-shadow: 0 0 1vh rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.kripto-satis-icerik input {
+  margin: 2vh 0;
+  padding: 1vh;
+  width: 100%;
+  font-size: 1.8vh;
+  border-radius: 0.5vh;
+  border: none;
+  background-color: #2c2c3c;
+  color: #fff;
+}
+
+.satis-kazanc {
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  color: #0f0;
+}
+
+.satis-onayla {
+  background-color: #28a745;
+  color: white;
+  padding: 1.2vh 2vh;
+  border: none;
+  border-radius: 0.8vh;
+  font-size: 2vh;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.satis-onayla:hover {
+  background-color: #1c7c2d;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.2vh;
+  right: 1.5vh;
+  font-size: 2.5vh;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.banka-islem-gecmisi2 {
+  position: relative;
+  bottom: 8vh;
+  width: 55.5vh;
+  height: 65vh;
+  max-height: 65vh;
+  background:  linear-gradient(#16222b, #162531, #16222b);
+  left: 10vh;
+  border-radius: 3vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  box-shadow: 0 0 0 0.2vh #4747471e, 0 0 0 0.3vh #9696961c;
+}
+
+.banka-islem-gecmisi2::-webkit-scrollbar {
+  display: none;
+}
+
+.banka-islem-item2 {
+  position: relative;
+  left: 2.5vh;
+  margin-top: 1.5vh;
+  width: 50vh;
+  height: 7.5vh;
+  border-radius: 2vh;
+  top: 2vh;
+  background:  linear-gradient(#1f2c36ab, #1f2c36ab, #1f2c36ab);
+}
+
+.banka-islem-baslik2 {
+  position: relative;
+  top: 2.5vh;
+  left: 2.5vh;
+}
+
+.banka-islem-tutar2 {
+  position: relative;
+  left: 40vh;
+}
+
+.banka-islem-header2 {
+  position: relative;
+  left: 20vh;
+  font-size: 2vh;
+  top: 2vh;
+}
+
+.toplam-gelir-konteyner {
+  position: relative;
+  width: 20vh;
+  height: 20vh;
+  bottom: 65vh;
+  left: 70vh;
+  border-radius: 2vh;
+  box-shadow: 0 0 0 0.8vh #474747, 0 0 0 1vh #969696;
+  background-color: #00ff2254;
+}
+
+.toplam-gelir-header {
+  position: relative;
+  text-align: center;
+  top: 3vh;
+}
+
+.toplam-gelir-miktar {
+  position: relative;
+  text-align: center;
+  top: 7vh;
+}
+
+.toplam-gider-konteyner {
+  position: relative;
+  width: 20vh;
+  height: 20vh;
+  bottom: 60vh;
+  left: 70vh;
+  border-radius: 2vh;
+  background-color: #ff000067;
+  box-shadow: 0 0 0 0.8vh #474747, 0 0 0 1vh #969696;
+}
+
+.toplam-gider-header {
+  position: relative;
+  text-align: center;
+  top: 3vh;
+}
+
+.toplam-gider-miktar {
+  position: relative;
+  text-align: center;
+  top: 7vh;
+}
+
+.banka-ayarlar-konteyner {
+  position: relative;
+  width: 134vh;
+  height: 67vh;
+  left: 10vh;
+  border-radius: 4vh;
+  bottom: 8vh;
+  background: rgba(43, 43, 56, 0.123);
+}
+
+.banka-ayarlar-header {
+  position: relative;
+  top: 2vh;
+  text-align: center;
+  font-size: 2vh;
+}
+
+.ayarlar-kutu-grid-yeni {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28vh, 1fr));
+  gap: 2vh;
+  padding: 3vh;
+  margin-top: 2vh;
+}
+
+.ayar-kutu-ozel {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2vh;
+  padding: 2vh;
+  color: white;
+  box-shadow: inset 0 0 1vh rgba(255, 255, 255, 0.08);
+}
+
+.kutu-baslik-ozel {
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.tema-secim {
+  background: linear-gradient(135deg, #2e5bff, #0014ff);
+  color: white;
+  text-align: center;
+  padding: 1.5vh;
+  border-radius: 1.5vh;
+  margin-bottom: 1.5vh;
+  cursor: pointer;
+  font-size: 2vh;
+  transition: background 0.3s;
+}
+.tema-secim:hover {
+  background: linear-gradient(135deg, #4c70ff, #0022ff);
+}
+
+.renk-secim {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1vh;
+  cursor: pointer;
+  border: 0.4vh solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s;
+}
+.renk-secim:hover {
+  transform: scale(1.1);
+}
+
+.banka-bildirim-merkezi {
+  position: fixed;
+  left: 50%;
+  bottom: 73vh;
+  width: 14vh;
+  height: 4vh;
+  border-radius: 4vh;
+  background-color: black;
+  transform: translateX(-50%);
+  transition: width 0.7s ease, height 0.7s ease, bottom 0.7s ease;
+  z-index: 9;
+  overflow: visible;
+}
+
+.bildirim-icerik {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  font-size: 1.8vh;
+  color: white;
+  z-index: 99;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  animation: yayilma 2.5s ease forwards;
+}
+
+@keyframes yayilma {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.bildirim-icon {
+  font-size: 2.2vh;
+}
